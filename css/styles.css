@@ -291,6 +291,7 @@ margin-right: 40px;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--title-color);
+    margin-bottom: 72px;
 }
 
 .section {
@@ -344,16 +345,16 @@ margin-right: 40px;
 }
 
 
-.doing-title {
-    /* color: var(--title-color);
+/* .doing-title {
+    color: var(--title-color);
     text-align: center;
     font-size: 36px;
     font-weight: 700;
     line-height: 111.111%;
     letter-spacing: 0.72px;
-    text-transform: capitalize; */
+    text-transform: capitalize;
     margin-bottom: 72px;
-}
+} */
 
 
 
@@ -456,9 +457,9 @@ margin-right: 40px;
 
 /* --------------customers----------------- */
 
-.customers-title {
+/* .customers-title {
     margin-bottom: 72px;
-}
+} */
 
 .customers-list {
     display: flex;

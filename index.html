@@ -27,9 +27,22 @@
         <!-- navigation bar -->
         <nav class="header-navigation">
           <!-- logo -->
-          <a class="logo link header-logo" href="./index.html"
+          <a class="logo link" href="./index.html"
             >Web<span class="logo-dark">Studio</span>
           </a>
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="40" height="40" aria-label="Mobile Menu Switch">
+              <use
+                class="mobile-toggle__menu"
+                href="./images/icons.svg#menu"
+              ></use>
+            </svg>
+          </button>
+
           <!-- studio, portofolio, contacts -->
           <ul class="header-menu-list list">
             <li class="header-item">
@@ -67,7 +80,7 @@
         </address>
       </div>
     </header>
-    <main class="main-container-index">
+    <main>
       <!-- hero image section -->
       <section class="hero">
         <div class="container">
@@ -140,7 +153,7 @@
       <!-- section 2 doing -->
       <section class="doing section">
         <div class="container">
-          <h2 class="doing-title section-title">What are we doing</h2>
+          <h2 class="section-title">What are we doing</h2>
           <!-- images for the second section -->
           <ul class="doing-list list">
             <li class="doing-item">
@@ -375,7 +388,7 @@
       <!--  4 section -->
       <section class="customers section">
         <div class="container">
-          <h2 class="customers-title section-title">Customers</h2>
+          <h2 class="section-title">Customers</h2>
           <ul class="customers-list list">
             <li class="customers-item">
               <a href="" class="customers-link link">
