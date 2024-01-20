@@ -30,18 +30,6 @@
           <a class="logo link" href="./index.html"
             >Web<span class="logo-dark">Studio</span>
           </a>
-          <button
-            class="menu-toggle js-open-menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
-            <svg width="40" height="40" aria-label="Mobile Menu Switch">
-              <use
-                class="mobile-toggle-menu"
-                href="./images/icons.svg#menu"
-              ></use>
-            </svg>
-          </button>
 
           <!-- studio, portofolio, contacts -->
           <ul class="header-menu-list list">
@@ -78,19 +66,104 @@
             </li>
           </ul>
         </address>
+        <button
+          type="button"
+          class="button-mobile-menu js-open-menu menu-toggle"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobile-menu-icon" width="32" height="22">
+            <use href="./images/icons.svg#menu"></use>
+          </svg>
+        </button>
+      </div>
+      <!-- Mobile menu -->
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button
+          type="button"
+          class="close-mobile-menu-btn js-close-menu menu-toggle"
+        >
+          <svg class="mobile-menu-close" width="8" height="8">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+        <ul class="list menu-navigation-mobile">
+          <li>
+            <a
+              href="./index.html"
+              class="menu-nav-links-mobile link index-window"
+              >Studio</a
+            >
+          </li>
+          <li>
+            <a href="./portfolio.html" class="menu-nav-links-mobile link"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a href="" class="menu-nav-links-mobile link">Contacts</a>
+          </li>
+        </ul>
+        <address>
+          <ul class="list adress-contacts-mobile">
+            <li>
+              <a href="tel:+110001111111" class="link contact-tel-mobile">
+                +11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a
+                href="mailto:info@devstudio.com"
+                class="link contact-email-mobile"
+              >
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="social-list-mobile list">
+          <li class="list-item-foot">
+            <a href="" class="social-link">
+              <svg class="social-icon-footer" width="24" height="24">
+                <use href="./images/icons.svg#logo-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="list-item-foot">
+            <a href="" class="social-link">
+              <svg class="social-icon-footer" width="24" height="24">
+                <use href="./images/icons.svg#logo-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="list-item-foot">
+            <a href="" class="social-link">
+              <svg class="social-icon-footer" width="24" height="24">
+                <use href="./images/icons.svg#logo-3"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="list-item-foot">
+            <a href="" class="social-link">
+              <svg class="social-icon-footer" width="24" height="24">
+                <use href="./images/icons.svg#logo-4"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
     <main>
       <!-- hero image section -->
       <section class="hero">
-        <div class="container">
+        <div class="container image-hero">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-button" data-modal-open type="button">
             Order Service
           </button>
         </div>
       </section>
-      <!-- section 1 list of qualities of the webstudio-->
+      <!-- section 1 -->
       <section class="features section">
         <div class="container">
           <h2 class="visually-hidden">Features</h2>
@@ -197,6 +270,7 @@
             <!-- first member -->
             <li class="team-item">
               <img
+                class="image"
                 srcset="
                   ./images/ourteam(1).jpg    1x,
                   ./images/ourteam(1)@x2.jpg 2x
@@ -244,6 +318,7 @@
             <!-- second member -->
             <li class="team-item">
               <img
+                class="image"
                 srcset="
                   ./images/ourteam(2).jpg    1x,
                   ./images/ourteam(2)@x2.jpg 2x
@@ -291,6 +366,7 @@
             <!-- third member -->
             <li class="team-item">
               <img
+                class="image"
                 srcset="
                   ./images/ourteam(3).jpg    1x,
                   ./images/ourteam(3)@x2.jpg 2x
@@ -338,6 +414,7 @@
             <!-- fourth member -->
             <li class="team-item">
               <img
+                class="image"
                 srcset="
                   ./images/ourteam(4).jpg    1x,
                   ./images/ourteam(4)@x2.jpg 2x
@@ -598,78 +675,7 @@
         </form>
       </div>
     </div>
-    <!-- menu toggle -->
-    <div class="menu-container js-menu-container is-open" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
-        <svg width="8" height="8">
-          <use
-            class="mobile-toggle-close"
-            href="./images/icons.svg#close-black"
-          ></use>
-        </svg>
-      </button>
 
-      <ul class="header-menu-list list">
-        <li class="header-item">
-          <a class="header-menu-link link current" href="./index.html"
-            >Studio</a
-          >
-        </li>
-        <li class="header-menu-item">
-          <a class="header-menu-link link" href="./portfolio.html">Portfolio</a>
-        </li>
-        <li class="header-menu-item">
-          <a class="header-menu-link link" href="#">Contacts</a>
-        </li>
-      </ul>
-
-      <address class="header-contacts">
-        <ul class="header-contacts-list list">
-          <li class="header-contacts-item">
-            <a
-              class="header-contacts-link link"
-              href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="header-contacts-link link" href="tel:+110001111111"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-        </ul>
-      </address>
-      <ul class="team-social-list list">
-        <li class="team-social-item">
-          <a href="" class="team-social-link link">
-            <svg class="team-social-icon" width="16" height="16">
-              <use href="./images/icons.svg#logo-1"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="team-social-item">
-          <a href="" class="team-social-link link">
-            <svg class="team-social-icon" width="16" height="16">
-              <use href="./images/icons.svg#logo-2"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="team-social-item">
-          <a href="" class="team-social-link link">
-            <svg class="team-social-icon" width="16" height="16">
-              <use href="./images/icons.svg#logo-3"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="team-social-item">
-          <a href="" class="team-social-link link">
-            <svg class="team-social-icon" width="16" height="16">
-              <use href="./images/icons.svg#logo-4"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
