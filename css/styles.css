@@ -504,6 +504,8 @@ margin-right: 40px;
 
     }
 }
+
+
 /* ------------nav------------search--------menu----- */
 .logo {
     font-weight: var(--brand-font-weight1);
@@ -960,12 +962,6 @@ mix-blend-mode: normal;
 }
 
 
-/* 
-    @media only screen and (min-width: 1159px) {
-        .container {
-            width: 1200px;
-        }
-    }
 
 
     @media only screen and (min-width: 768px) and (max-width: 1158px) {
@@ -991,12 +987,6 @@ mix-blend-mode: normal;
     }
 
 
-    @media only screen and (max-width: 767px) {
-        .container {
-            width: 480px;
-        }
-    }
- */
 
 
 /* ----------footer section -------------------*/
