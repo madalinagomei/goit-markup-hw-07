@@ -23,11 +23,7 @@
   <body>
     <!-- header section-->
     <header class="header">
-      <div
-        class="container header-container js-open-menu"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-      >
+      <div class="container header-container">
         <!-- navigation bar -->
         <nav class="header-navigation">
           <!-- logo -->
@@ -36,23 +32,22 @@
           </a>
 
           <!-- studio, portofolio, contacts -->
-          <div class="header-menu">
-            <ul class="header-menu-list list">
-              <li class="header-item">
-                <a class="header-menu-link link current" href="./index.html"
-                  >Studio</a
-                >
-              </li>
-              <li class="header-menu-item">
-                <a class="header-menu-link link" href="./portfolio.html"
-                  >Portfolio</a
-                >
-              </li>
-              <li class="header-menu-item">
-                <a class="header-menu-link link" href="#">Contacts</a>
-              </li>
-            </ul>
-          </div>
+          <ul class="header-menu-list list">
+            <li class="header-item">
+              <a class="header-menu-link link current" href="./index.html"
+                >Studio</a
+              >
+              <!-- previewlistener="true"  la fiecare <A>-->
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-link link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-link link" href="#">Contacts</a>
+            </li>
+          </ul>
         </nav>
         <!-- contact adress section -->
         <address class="header-contacts">
@@ -72,26 +67,29 @@
           </ul>
         </address>
         <!-- ---------------------meniu toggle icon------------ -->
-        <button type="button" class="button-mobile-menu" js-open-menu>
-          <svg class="mobile-menu-icon" width="52" height="42">
+        <button
+          type="button"
+          class="button-mobile-menu js-open-menu menu-toggle"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobile-menu-icon" width="32" height="22">
             <use href="./images/icons.svg#menu"></use>
           </svg>
         </button>
       </div>
-
-      <!-- meniu toggle -->
       <!-- close mobile menu -->
-      <div class="menu-container is-hidden" js-menu-container>
+      <div class="menu-container js-menu-container" id="mobile-menu">
         <button
           type="button"
-          class="close-mobile-menu-btn menu-toggle"
-          js-close-menu
+          class="close-mobile-menu-btn js-close-menu menu-toggle"
         >
           <svg class="mobile-menu-close" width="8" height="8">
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
 
+        <!-- meniu toggle -->
         <ul class="list menu-navigation-mobile">
           <li>
             <a
@@ -106,7 +104,7 @@
             >
           </li>
           <li>
-            <a href="#" class="menu-nav-links-mobile link">Contacts</a>
+            <a href="" class="menu-nav-links-mobile link">Contacts</a>
           </li>
         </ul>
         <address>
